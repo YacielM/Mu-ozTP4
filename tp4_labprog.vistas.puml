@@ -1,0 +1,34 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class java.util.HashSet
+class javax.swing.JFrame
+class javax.swing.JInternalFrame
+class javax.swing.JOptionPane
+class tp4_labprog.Alumno
+class tp4_labprog.Materias
+class tp4_labprog.vistas.Alta_alumnos
+class tp4_labprog.vistas.Alta_materias
+class tp4_labprog.vistas.Formulario_Inscripcion
+class tp4_labprog.vistas.Menu
+tp4_labprog.vistas.Alta_alumnos ..> java.lang.SuppressWarnings
+tp4_labprog.vistas.Alta_alumnos ..> java.util.HashSet
+tp4_labprog.vistas.Alta_alumnos --|> javax.swing.JInternalFrame
+tp4_labprog.vistas.Alta_alumnos ..> javax.swing.JOptionPane
+tp4_labprog.vistas.Alta_alumnos ..> tp4_labprog.Alumno
+tp4_labprog.vistas.Alta_materias ..> java.lang.SuppressWarnings
+tp4_labprog.vistas.Alta_materias ..> java.util.HashSet
+tp4_labprog.vistas.Alta_materias --|> javax.swing.JInternalFrame
+tp4_labprog.vistas.Alta_materias ..> javax.swing.JOptionPane
+tp4_labprog.vistas.Alta_materias ..> tp4_labprog.Materias
+tp4_labprog.vistas.Formulario_Inscripcion ..> java.lang.SuppressWarnings
+tp4_labprog.vistas.Formulario_Inscripcion ..> java.util.HashSet
+tp4_labprog.vistas.Formulario_Inscripcion --|> javax.swing.JInternalFrame
+tp4_labprog.vistas.Formulario_Inscripcion ..> javax.swing.JOptionPane
+tp4_labprog.vistas.Formulario_Inscripcion ..> tp4_labprog.Alumno
+tp4_labprog.vistas.Formulario_Inscripcion ..> tp4_labprog.Materias
+tp4_labprog.vistas.Menu ..> java.lang.SuppressWarnings
+tp4_labprog.vistas.Menu ..> java.util.HashSet
+tp4_labprog.vistas.Menu --|> javax.swing.JFrame
+tp4_labprog.vistas.Menu ..> tp4_labprog.Alumno
+tp4_labprog.vistas.Menu ..> tp4_labprog.Materias
+@enduml
